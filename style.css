@@ -195,9 +195,12 @@
    }
 
    .roast {
+     dispaly: flex;
      color: #872d25;
      font-size: 120px;
      font-family: 'Baloo 2', sans-serif;
+     font-align: center;
+     justify-content: center;
    }
    
    
