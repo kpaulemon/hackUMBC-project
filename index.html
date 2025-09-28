@@ -1,0 +1,75 @@
+ <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Your Page Title</title>
+        <!-- Link to your CSS file(s) -->
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Your content goes here -->
+        <div class="homePage">
+            <div class="title">
+                <img src="Images/Screenshot 2025-09-27 at 9.17.40 PM.png" class="left">
+                <div class="miniPage">
+                    <h1 class="header">Welcome to Roast Block</h1>
+                </div>
+                <img src="Images/Screenshot 2025-09-27 at 9.18.24 PM.png" class="right">
+            </div>
+        </div>
+        
+        <div class="timerPage">
+            <h2>Focus Timer</h2>
+            <div class="time-container">
+                <div id="time" class="label" role="textbox" aria-label="Time input" contenteditable="true" spellcheck="false">00:00:00</div>
+                <div class="controls">
+                    <button id="toggle">Start</button>
+                    <button id="clear" class="ghost" title="Clear input"></button>
+                </div>
+            </div>
+
+            <div class="url-section">
+                <div class="url-input-wrap">
+                  <input
+                    id="urlInput"
+                    list="urlSuggestions"
+                    placeholder="Type a site to block… e.g. youtube.com"
+                    inputmode="url"
+                    autocomplete="off"
+                    aria-label="Site to block"
+                  />
+                  <button id="addUrlBtn" aria-label="Add site" title="Add site"></button>
+              
+                  <datalist id="urlSuggestions">
+                    <option value="youtube.com"></option>
+                    <option value="instagram.com"></option>
+                    <option value="twitter.com"></option>
+                    <option value="tiktok.com"></option>
+                    <option value="reddit.com"></option>
+                    <option value="facebook.com"></option>
+                    <option value="netflix.com"></option>
+                    <option value="discord.com"></option>
+                    <option value="twitch.tv"></option>
+                    <option value="pinterest.com"></option>
+                  </datalist>
+                </div>
+              
+                <ul id="urlList" class="pill-list" aria-label="Blocked sites"></ul>
+              </div>
+              
+
+        </div>
+         
+        
+
+        
+        
+
+
+
+        <!-- Link to your JavaScript file(s) -->
+        <script src="script.js"></script>
+    </body>
+    </html>
