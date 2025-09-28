@@ -14,6 +14,8 @@
     chrome.runtime.sendMessage({ action: "startBlocking", minutes }, response => {
       if (response && response.success) {
         statusText.textContent = `✅ Blocking for ${minutes} min.`;
+
+        chrome.tabs.create({url: "http://127.0.0.1:5500/index.html?autostart=1&seconds=${seconds}"});
       } else {
         statusText.textContent = "❌ Failed to start blocking.";
       }
