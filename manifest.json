@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Timed Website Blocker",
+  "version": "1.1",
+  "description": "Blocks selected websites for a user-defined number of minutes.",
+  "permissions": ["declarativeNetRequest", "storage", "alarms"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Timed Website Blocker",
+    "default_popup": "popup.html"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["blocked.html"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "declarative_net_request": {
+    "rule_resources": []
+  }
+}
+
+

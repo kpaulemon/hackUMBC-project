@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>Set Block Time</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      min-width: 200px;
+      padding: 10px;
+    }
+    label, input, button {
+      display: block;
+      margin: 10px 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h2>Block Websites</h2>
+  <label for="minutes">Enter minutes:</label>
+  <input type="number" id="minutes" min="1" value="5" />
+  <button id="startBtn">Start Blocking</button>
+  <p id="status"></p>
+
+  <!-- ✅ Load script after body so DOM is ready -->
+  <script src="popup.js"></script>
+</body>
+</html>
