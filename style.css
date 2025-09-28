@@ -190,6 +190,14 @@
    
    .time-container { max-width: 760px; margin: 0 auto; }
 
-   .
+   .blocked-container {
+     background-color: #f2bd99;
+   }
+
+   .roast {
+     color: #872d25;
+     font-size: 120px;
+     font-family: 'Baloo 2', sans-serif;
+   }
    
    
